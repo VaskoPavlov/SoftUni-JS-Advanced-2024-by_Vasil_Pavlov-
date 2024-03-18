@@ -10,7 +10,7 @@
  */
 
 /**
- * @param {[number]} numbers 
+ * @param {number[]} numbers 
  */
 function aggregateElements(numbers){
     let sum = 0;
