@@ -7,7 +7,6 @@
  * The input comes as an array of number elements.
  * The output is printed on the console, each element on a new line.
  */
-
 /**
  * @param {number[]} array 
  */
