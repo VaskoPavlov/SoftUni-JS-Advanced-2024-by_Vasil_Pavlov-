@@ -9,7 +9,7 @@
  */
 
 /**
- * @param {string[]} array 
+ * @param {string[]} array
  */
 function sort(array){
     function compareAlphabetically(a,b){
