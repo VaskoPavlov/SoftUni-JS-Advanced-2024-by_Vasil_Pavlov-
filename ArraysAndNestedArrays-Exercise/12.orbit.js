@@ -6,18 +6,50 @@ function orbit(numsArray){
 
     //can be written shorter like this:
     // let [height, width, x, y] = numsArray;
-    const matrix = Array.from({ length: height }, () => new Array(width))
-
-    for (let i = 0; i < height; i++) {
-        for (let j = 0; j < width; j++) {
-            matrix[i][j] = Math.max(Math.abs(y - i), Math.abs(x - j)) + 1
+        const matrix = Array.from({ length: height }, () => new Array(width))
+    
+        for (let i = 0; i < height; i++) {
+            for (let j = 0; j < width; j++) {
+                matrix[i][j] = Math.max(Math.abs(y - i), Math.abs(x - j)) + 1
+            }
         }
-    }
-
-    console.log(matrix.map(r => r.join(' ')).join('\n'))
+    
+        console.log(matrix.map(r => r.join(' ')).join('\n'))
 }
 orbit([4, 4, 0, 0]);
-/*
+/* Explanation:
+3. **Populating the Matrix**:
+   - The matrix is populated using a nested loop. The outer loop iterates over the rows (`i`), 
+   and the inner loop iterates over the columns (`j`).
+
+   - For each cell in the matrix, the value is calculated based on the 
+   Manhattan distance from the cell to the star's position.
+
+   - The Manhattan distance between two points (x1, y1) and (x2, y2) 
+   is defined as |x2 - x1| + |y2 - y1|. It represents the distance between two points in a 
+   grid-based system where only vertical and horizontal movements are allowed.
+
+   - In this case, the distance from each cell to the star's position (`x`, `y`) 
+   is calculated using the formula `Math.max(Math.abs(y - i), Math.abs(x - j)) + 1`.
+
+   - `Math.abs(y - i)` calculates the vertical distance between the current cell's row `i` 
+   and the star's row `y`.
+
+   - `Math.abs(x - j)` calculates the horizontal distance between the current cell's column `j` 
+   and the star's column `x`.
+
+   - `Math.max(...)` is used to find the maximum of the two distances, 
+   ensuring that we get the maximum distance in either the vertical or horizontal direction.
+
+   - Adding 1 to the maximum distance ensures that the value starts from 1 around the star's position 
+   and increases as we move away from it.
+
+   - This value represents the orbital level around the star. 
+   Cells closer to the star have lower values, while cells farther away have higher values.
+*/
+
+/* Exercise requirements:
+
 You will be given an empty rectangular space of cells. Then you will be given the position of a star. 
 You need to build the orbits around it.
 You will be given a coordinate of a cell, which will always be inside the matrix, on which you will put the value - 1. 
