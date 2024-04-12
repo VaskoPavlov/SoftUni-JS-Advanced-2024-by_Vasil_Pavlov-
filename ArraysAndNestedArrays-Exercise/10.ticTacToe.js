@@ -1,3 +1,36 @@
+/**
+ * Task: Make a tic-tac-toe console application.
+You will receive an array of arrays. As you know there are two players in this game, 
+so the first element of the input will be the first player's chosen coordinates, 
+the second element will be the second player's turn coordinates, and so on.
+The initial state of the dashboard is
+
+[[false, false, false],
+[false, false, false],
+[false, false, false]]
+
+The first player's mark is X and the second player's mark is O.
+
+Input
+One parameter:
+•	An array - the moves in a row that players make
+Output
+•	There are two players - X and O
+•	If  a player tries to make his turn on already taken place, he should take his turn again and 
+you should print the following message:
+"This place is already taken. Please choose another!"
+•	If there are no free spaces on the dashboard and nobody wins the game should end and 
+you should print the following message:
+"The game ended! Nobody wins :("
+•	If someone wins you should print the following message and  the current state of the dashboard:
+"Player {x} wins!"
+Note: When printing the state of the dashboard the elements of each row of the dashboard 
+should be separated by "\t" and each row should be on a new line.
+ */
+
+/**
+ * @param {string[]} moves 
+ */
 function solve(moves) {
     const board = [
       [false, false, false],
