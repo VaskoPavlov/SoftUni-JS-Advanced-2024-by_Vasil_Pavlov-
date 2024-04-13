@@ -1,5 +1,5 @@
 function spiralMatrices(width, height) {
-                                                                        // the declaration blow mkaes CONST variable!!!
+                                                                        //this makes CONST variable!!!
     const matrix = Array.from({ length: height }, () => new Array(width)), lastVal = width * height;
     // you can create variables like this 
     let i = 0, j = 0, n = 1, w = width, h = height
