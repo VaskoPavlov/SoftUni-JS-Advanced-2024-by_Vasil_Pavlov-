@@ -25,7 +25,8 @@ Upon completing this course, you will have gained proficiency in the following a
 - Harnessing REST APIs and mastering asynchronous programming techniques.
 - Conducting thorough application testing procedures.
 
-
+Commits will look like: |Exercise (number) - js file| which means added all the changes to the js file
+and committed them to the repository!
 
 ---
 **Author**: Vasil Pavlov    
