@@ -25,9 +25,12 @@ Upon completing this course, you will have gained proficiency in the following a
 - Harnessing REST APIs and mastering asynchronous programming techniques.
 - Conducting thorough application testing procedures.
 
-Commits will look like: |Exercise (number) - js file| which means added all the changes to the js file
-and committed them to the repository!
+Commits will look like: 
+|Exercise (number) - js file| 
+which means added all the changes to the js file and committed them to the repository!
 
+!!! DOM Commits will have a few files alongside JS file but the commit will still display 
+only the JS file, because the other files are just to visualize it !!!
 ---
 **Author**: Vasil Pavlov    
 **Last Updated**: 28.02.2024
