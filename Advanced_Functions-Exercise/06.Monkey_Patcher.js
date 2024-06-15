@@ -99,6 +99,14 @@ function solution(arg) {
     reportDown = this.downvotes;
 }
 
+let post = {
+    id: '3',
+    author: 'emil',
+    content: 'wazaaaaa',
+    upvotes: 100,
+    downvotes: 100
+}
+
 solution.call(post, 'upvote');
 solution.call(post, 'downvote');
 let score = solution.call(post, 'score');
