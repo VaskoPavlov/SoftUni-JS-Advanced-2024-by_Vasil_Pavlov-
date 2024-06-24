@@ -1,4 +1,4 @@
-import { isSymmetric } from "./check_symetry";
+import { isSymmetric } from "./check_symetry.js";
 
 describe ('Symmetric check', function (){
     it ('symmetric with odd quantity of whole numbers ', () =>{
