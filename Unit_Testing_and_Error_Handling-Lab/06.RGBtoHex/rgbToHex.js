@@ -1,3 +1,17 @@
+/**
+ * Task: Your tests will be supplied with a function named 'rgbToHexColor()', 
+ * which takes three arguments. It should meet the following requirements:
+•	Take three integer numbers, representing the red, green, and blue values of RGB color, 
+    each within the range [0…255]
+•	Return the same color in hexadecimal format as a string (e.g. '#FF9EAA')
+•	Return undefined if any of the input parameters are of an invalid type or not in the expected range
+ */
+/**
+ * @param {number} red 
+ * @param {number} green 
+ * @param {number} blue 
+ * @returns {string | undefined}
+ */
 function rgbToHexColor(red, green, blue) {
     if (!Number.isInteger(red) || (red < 0) || (red > 255)){
         return undefined; // Red value is invalid

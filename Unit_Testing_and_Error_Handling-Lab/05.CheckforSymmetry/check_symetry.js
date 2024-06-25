@@ -1,3 +1,15 @@
+/**
+ * Task: Your tests will be supplied with a function named 'isSymmetric()'. 
+ * It should meet the following requirements:
+•	Take an array as an argument
+•	Return false for any input that isn’t of the correct type
+•	Return true if the input array is symmetric
+•	Otherwise, return false
+ */
+/**
+ * @param {array} arr 
+ * @returns {Boolean} equal
+ */
 function isSymmetric(arr) {
     if (!Array.isArray(arr)){
         return false; // Non-arrays are non-symmetric
