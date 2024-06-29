@@ -38,4 +38,5 @@ which means added all the changes to the test.js file and committed them to the 
 !!! This commits will have a JS file with task requirements alongside the test.js file!!!
 ---
 **Author**: Vasil Pavlov    
-**Last Updated**: 28.02.2024
+**First created**: 28.02.2024
+**Last Updated**: 29.06.2024
