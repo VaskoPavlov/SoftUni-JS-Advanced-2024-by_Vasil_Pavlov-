@@ -31,6 +31,11 @@ which means added all the changes to the js file and committed them to the repos
 
 !!! DOM Commits will have a few files alongside JS file but the commit will still display 
 only the JS file, because the other files are just to visualize it !!!
+
+Commits for Unit Testing and Error Handling:
+|Exercise (number) - test.js file|
+which means added all the changes to the test.js file and committed them to the repository!
+!!! This commits will have a JS file with task requirements alongside the test.js file!!!
 ---
 **Author**: Vasil Pavlov    
 **Last Updated**: 28.02.2024
